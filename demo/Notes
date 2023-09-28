@@ -1,0 +1,22 @@
+First launch the settings from create new project (new spring starter project from sts tool suite)
+Settings to remember (1.Java language 2.type:-maven 3.packaging:-Jar 4.version:-17)
+Never use java gradle project always use maven. give all names according to requirements.
+
+//////////////////////////////////Springboot project is created/////////////////////////////
+
+1.Create 5 more extra packages:- 
+	1.DBUtil for a database connection.
+	2.model which describes all the data in the backend table (the getters setters and constructor).
+	3.service:- which describes all the operations performed on the backend(It is only a interface it only defines the functions not write any code inside the function. )
+	4.Service Implementation:- which implememts the service interface and performs all the functionalities in the backend.
+	5.controller :- Here we will create  the rest API which will use all the components(here we write a lot of concepts we don't understand).
+	controller also accepts the data and communicate with the front end
+
+
+
+///////////////////////////////ANGULAR SIDE///////////////////////////
+1.take care of routing in src\app\app-routing.module.ts
+2.create a model typescript and define there (this is in src\app\login\users.ts (ng g class users))
+//strict institalization property must be changed.
+3.create a service in the app folder to access the service provided in tomcat (this is in src\app\userservice.service.ts(ng g service userservice))
+4.Finish in the login component ts.
